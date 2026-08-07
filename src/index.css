@@ -1,0 +1,73 @@
+:root {
+  --cream: #FBF8F1;
+  --paper: #FFFFFF;
+  --sage-50: #EEF3E6;
+  --sage-100: #DDE9CE;
+  --sage-200: #C3DBAC;
+  --sage-300: #A3C883;
+  --sage-500: #6E8F52;
+  --sage-600: #567340;
+  --sage-700: #3F5B32;
+  --ink: #2B3327;
+  --ink-soft: #5C6552;
+  --ink-faint: #8A9280;
+  --coral: #F1AA9D;
+  --coral-dark: #DD8672;
+  --lavender: #E3DEF6;
+  --lavender-dark: #B7A9E8;
+  --butter: #F6D68F;
+  --butter-dark: #E7B85A;
+  --line: #E7E1D2;
+  --shadow-soft: 0 8px 24px rgba(43, 51, 39, 0.08);
+  --shadow-lift: 0 14px 32px rgba(43, 51, 39, 0.14);
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+  --font-display: 'Fraunces', 'Iowan Old Style', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
